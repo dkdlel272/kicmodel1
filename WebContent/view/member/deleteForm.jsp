@@ -35,6 +35,7 @@ if(login == null || login.trim().equals("")){
 			<button type="submit" class="btn btn-dark">로그인</button>
 		</div>
 		</form>
+		</div>
 <%} %> 
 </body>
 </html>

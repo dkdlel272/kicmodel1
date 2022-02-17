@@ -27,13 +27,17 @@ if(login == null || login.trim().equals("")){
 	String email = request.getParameter("email");
 	String tel = request.getParameter("tel");
 	String pass = request.getParameter("pass");
+	String picture = request.getParameter("picture");
 	MemberDao md = new MemberDao();
 	Member mem =  md.selectOne(login);
 	
 	
-	//member에 email,tel을 저장
+	//member에 email,tel,picture를 저장
 	mem.setEmail(email);
 	mem.setTel(tel);
+	mem.setPicture(picture);
+	
+	System.out.println(mem);
 	
 
 	
